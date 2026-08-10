@@ -1,0 +1,36 @@
+programa {
+  funcao inicio() {
+    
+ escreva ("Boleto de lançamentos de Notas")
+
+cadeia nome
+cadeia disciplina
+real nota
+
+ escreva ("\nNome do (a) aluno (a):")
+ leia (nome)
+
+escreva ("\nDisciplina:")
+leia (disciplina)
+
+escreva ("\nNota:")
+leia (nota)
+
+se (nota >= 60)
+{
+  escreva ("\nVocê está APROVADO")
+}
+
+senao
+
+se (nota < 40)
+ {
+   escreva ("\nVocê esta REPROVADO")
+ }
+
+ senao 
+ {
+  escreva ("\nVocê esta de RECUPERAÇÂO")
+ }
+  }
+}
