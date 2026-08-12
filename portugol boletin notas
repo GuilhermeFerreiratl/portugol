@@ -1,0 +1,53 @@
+programa {
+  funcao inicio() {
+
+escreva ("Media final")
+
+
+
+real algoritimo
+real producaocientifico
+real engsoft
+real linguagens
+real nota
+
+
+escreva ("\nNota de Algoritimo:")
+leia (algoritimo)
+
+escreva ("\nNota de producao_cientifico:")
+leia (producaocientifico)
+
+escreva ("\nNota de engsoft:")
+leia (engsoft)
+
+escreva ("\nNota de linguagens:")
+leia (linguagens)
+
+
+nota = (algoritimo + producaocientifico + engsoft + linguagens ) / 4
+escreva ("\nMEDIA FINAL:", nota)
+
+se (nota >100)
+{
+  escreva ("\nERRO LANCAMENTO!")
+}
+
+se (nota >=60 e nota <=100)
+{
+  escreva ("\nAPROVADO!")
+}
+senao 
+se (nota <30)
+{
+  escreva ("\nREPROVADO!")
+}
+se (nota >=30 e nota <60) 
+{
+  escreva ("\nRECUPERACAO!")
+}
+
+
+    
+  }
+}

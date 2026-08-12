@@ -1,0 +1,47 @@
+programa {
+  funcao inicio() {
+    
+ escreva ("Boleto de lançamentos de Notas")
+
+real nota1
+real nota2
+real media
+real nota
+
+ escreva ("\nNota1:")
+ leia (nota1)
+
+escreva ("\nNota2:")
+leia (nota2)
+
+nota = (nota1 + nota2) / 2
+        escreva("\nMédia final: ", nota)
+
+
+se (nota >= 60)
+{
+  escreva ("\nVocê está APROVADO")
+}
+
+senao
+
+se (nota < 40)
+ {
+   escreva ("\nVocê esta REPROVADO")
+ }
+
+ senao 
+ {
+  escreva ("\nVocê esta de RECUPERAÇÂO")
+ }
+
+
+
+
+
+
+
+
+ 
+  }
+}

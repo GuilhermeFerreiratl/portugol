@@ -1,0 +1,24 @@
+print("Boletin de notas!")
+
+nome = input ("nome do(a) aluno (a):")
+curso = input ("curso:")
+semestre = input ("semestre:")
+disciplina = input ("disciplina:")
+nota1 = float ( input ("nota1:"))
+nota2 = float ( input ("nota2:"))
+
+media = (nota1 + nota2) / 2
+
+if media >100:
+    print ("Erro de lancamento!")
+
+if media >=60 and media <=100:
+    print ("APROVADO!")
+
+elif media >=20 and media <60:
+    print ("RECUPERACAO!")
+if media >=0 and media <20:
+    Print ("REPROVADO")
+
+print ("\nNome", nome, "\ncurso", curso, "\nsemestre",semestre,"\ndisciplina",disciplina,"\nmedia",media)
+
