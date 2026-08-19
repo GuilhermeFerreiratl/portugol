@@ -1,0 +1,38 @@
+programa {
+  funcao inicio() {
+
+real x
+
+escreva ("insira um numero: ")
+leia (x)
+
+se ( x % 2 == 0) {
+escreva ("PAR")
+}
+senao {
+  escreva ("IMPAR")
+  }
+
+
+
+
+
+
+
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  }
+}
