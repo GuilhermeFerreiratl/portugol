@@ -1,0 +1,27 @@
+programa {
+  funcao inicio() {
+
+real numero
+
+escreva ("insira um numero: ")
+leia (numero)
+
+se (numero > 0) {
+escreva ("POSITIVO")
+}
+senao se (numero < 0) {
+escreva ("negativo")
+}
+senao {
+  escreva ("ZERO")
+  }
+
+
+
+
+
+
+
+    
+  }
+}
