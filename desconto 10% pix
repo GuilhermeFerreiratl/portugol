@@ -1,0 +1,24 @@
+programa {
+  funcao inicio() {
+inteiro x
+logico cartao
+logico p
+inteiro y
+
+escreva ("valor do produto ")
+leia (x)
+
+escreva ("Pagamento sera pix? ")
+leia (cartao)
+
+p = cartao
+se (p  == verdadeiro)
+ {
+   escreva (x/100*90)
+}
+
+senao {
+  escreva(x)}
+
+  }
+}
