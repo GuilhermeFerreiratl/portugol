@@ -1,0 +1,26 @@
+programa {
+  funcao inicio() {
+
+inteiro idade
+cadeia registrado
+logico sim
+
+escreva ("Qual sua idade?")
+leia (idade)
+
+escreva ("Possui registro?")
+leia (sim)
+
+
+se (idade >=16 e sim == verdadeiro) {
+   escreva ("idade autorizada")
+}
+ senao {
+  
+  escreva ("Não autorizado")}
+
+
+
+    
+  }
+}
