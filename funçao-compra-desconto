@@ -1,0 +1,64 @@
+programa {
+	
+	funcao inicio() {
+
+		compra()
+	}
+
+	funcao compra() {
+		real valorTotal
+		inteiro formaPagamento
+
+		escreva("Digite o valor total da compra: R$ ")
+		leia(valorTotal)
+
+	
+		formaPagamento = opcao_de_pagamento()
+
+		
+		desconto(valorTotal, formaPagamento)
+	}
+
+	funcao inteiro opcao_de_pagamento() {
+		inteiro opcao
+		
+		escreva("\n--- FORMAS DE PAGAMENTO ---\n")
+		escreva("1 - À vista Dinheiro -> 10% de desconto\n")
+		escreva("2 - À vista no Cartão -> 5% de desconto\n")
+		escreva("3 - Boleto -> Valor normal (sem desconto)\n")
+		escreva("Escolha a opção desejada: ")
+		leia(opcao)
+		escreva("\n")
+		
+		retorne opcao
+	}
+
+	
+	funcao desconto(real valor, inteiro opcao) {
+		real valorFinal
+
+		se (opcao == 1) {
+			valorFinal = valor * 0.90 
+			escreva("Desconto de 10% aplicado.\n")
+			escreva("Valor final a pagar: R$ ", valorFinal, "\n")
+		} 
+		senao se (opcao == 2) {
+			valorFinal = valor * 0.95 
+			escreva("Desconto de 5% aplicado.\n")
+			escreva("Valor final a pagar: R$ ", valorFinal, "\n")
+		} 
+		senao se (opcao == 3) {
+			valorFinal = valor 
+			escreva("Compras boleto não possuem desconto.\n")
+			escreva("Valor final a pagar: R$ ", valorFinal, "\n")
+		} 
+		senao {
+			escreva("Opção de pagamento inválida! O valor total permanece: R$ ", valor, "\n")
+		}
+	}
+}
+programa {
+  funcao inicio() {
+    
+  }
+}
