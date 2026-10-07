@@ -1,0 +1,54 @@
+programa 
+{
+	funcao inicio() 
+	{
+		real numero
+		real numero1
+		real resultado
+		cadeia operador
+
+		escreva("Qual o primeiro número? ")
+		leia(numero)
+
+		escreva("Qual o operador? (+, -, *, /) ")
+		leia(operador)
+
+		escreva("Qual o segundo número? ")
+		leia(numero1)
+
+		resultado = calculo(numero, numero1, operador)
+		escreva("Resultado: ", resultado)
+	}
+
+
+	funcao real calculo(real numero, real numero1, cadeia operador) 
+	{
+		se (operador == "+") 
+		{
+			retorne numero + numero1
+		} 
+		senao se (operador == "-") 
+		{
+			retorne numero - numero1
+		} 
+		senao se (operador == "*") 
+		{
+			retorne numero * numero1
+		} 
+		senao se (operador == "/") 
+		{
+		
+			se (numero1 == 0)
+			{
+				escreva("Não existe divisão por zero!\n")
+				retorne 0
+			}
+			retorne numero / numero1
+		} 
+		senao 
+		{
+			escreva("Operador inválido!\n")
+			retorne 0
+		}
+	}
+}
