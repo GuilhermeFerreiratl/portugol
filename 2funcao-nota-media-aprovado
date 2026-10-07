@@ -1,0 +1,35 @@
+programa { 
+    funcao inicio() { 
+        real nota 
+        real nota1 
+        real mediafinal 
+        logico aprovado 
+
+        escreva ("insira a nota 1: ") 
+        leia (nota) 
+        escreva ("insira a nota 2: ") 
+        leia (nota1) 
+
+        mediafinal = media(nota, nota1) 
+
+        se (mediafinal >= 70){ 
+            aprovado = verdadeiro 
+        } senao { 
+            aprovado = falso 
+        } 
+
+        escreva ("Média: ", mediafinal, "\n") 
+
+        se (aprovado){ 
+            escreva ("Aprovado") 
+        } senao { 
+            escreva("Reprovado") 
+        } 
+    } 
+
+    funcao real media (real nota, real nota1){ 
+        real resultado
+        resultado = (nota + nota1) / 2
+        retorne resultado
+    } 
+}
